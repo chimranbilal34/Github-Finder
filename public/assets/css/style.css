@@ -1,0 +1,365 @@
+body {
+    font-family: Raleway, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.carousel-arrow-prev {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 300px;
+    margin-top: -31px;
+    left: 20px;
+    opacity: .6;
+}
+
+.carousel-arrow-next {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 300px;
+    margin-top: -31px;
+    right: 20px;
+    opacity: .6;
+}
+
+.arrows {
+    width: 15px;
+    height: 15px;
+    border-color: #fff;
+    margin-top: 23px;
+    margin-left: 25px;
+}
+
+.prev {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.next {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-135deg);
+    margin-left: 17px;
+}
+
+.carousel-arrow-next:hover,
+.carousel-arrow-prev:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background: url("../img/lights.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.overlay {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dark.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.services.overlay {
+    background-color: rgba(30, 112, 150, 0.9);
+}
+
+.why-we-do.overlay {
+    background-color: rgba(232, 238, 245, .9);
+}
+
+.how-we-do.overlay {
+    padding-bottom: 80px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+h1.text-white i {
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: -.5px;
+    font-style: normal;
+    margin-top: -5px;
+    display: block;
+}
+
+.text-white.lead {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+#how-we-do-what-we-do h2 {
+    background: rgb(179, 179, 179);
+}
+
+
+/*PRICE CARDS*/
+
+#pricing {
+    padding-top: 70px;
+    /*padding-bottom: 70px;*/
+}
+
+#pricing h2 {
+    font-size: 24px;
+}
+
+.wrapper-card {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 40px auto;
+    width: 77%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    flex: 1;
+    margin: 8px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.card.popular {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.card.popular .card-title h3 {
+    color: #3498db;
+    font-size: 22px;
+}
+
+.card.popular .card-price {
+    margin: 20px;
+}
+
+.card.popular .card-price h1 {
+    color: #3498db;
+    font-size: 60px;
+}
+
+.card.popular .card-action button {
+    background-color: #3498db;
+    border-radius: 80px;
+    color: #fff;
+    font-size: 17px;
+    margin-top: -15px;
+    padding: 15px;
+    height: 80px;
+}
+
+.card.popular .card-action button:hover {
+    background-color: #2386c8;
+    font-size: 23px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-ribbon {
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+    left: -10px;
+    width: 114px;
+    height: 112px;
+}
+
+.card-ribbon span {
+    position: absolute;
+    display: block;
+    width: 160px;
+    padding: 10px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    left: -35px;
+    top: 25px;
+    transform: rotate(-45deg);
+}
+
+.card-ribbon::before,
+.card-ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    border: 5px solid #2980b9;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.card-ribbon::before {
+    top: 0;
+    right: 0;
+}
+
+.card-ribbon::after {
+    bottom: 0;
+    left: 0;
+}
+
+.card-title h3 {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.card-title h4 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.card-price {
+    margin: 30px 0;
+}
+
+.card-price h1 {
+    font-size: 46px;
+}
+
+.card-price h1 sup {
+    font-size: 15px;
+    display: inline-block;
+    margin-left: -20px;
+    width: 10px;
+}
+
+.card-price h1 small {
+    color: rgba(0, 0, 0, 0.3);
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.card-description ul {
+    display: block;
+    list-style: none;
+    margin: 40px 0;
+    padding: 0;
+}
+
+.card-description li {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    margin: 0 0 15px;
+}
+
+.card-description li::before {
+    font-family: FontAwesome;
+    content: "\f00c";
+    padding: 0 5px 0 0;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.card-action button {
+    background: transparent;
+    border: 2px solid #3498db;
+    border-radius: 30px;
+    color: #3498db;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    height: 60px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-action button:hover {
+    background-color: #3498db;
+    box-shadow: 0 2px 4px #196090;
+    color: #fff;
+    font-size: 17px;
+}
+
+#our-team {
+    position: relative;
+    min-height: 800px;
+    padding-bottom: 30px;
+    background: url(../img/content/ourTeam.jpg?2f450d627c677a55ecc) center bottom no-repeat;
+}
+
+#our-team h2 {
+    background: #fff;
+}
+
+.counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/Preloader_2.gif) center no-repeat #fff;
+}
+
+@media (max-width: 991px) {
+    .wrapper-card {
+        display: block;
+        width: 65%;
+    }
+    .card,
+    .card.popular {
+        margin-bottom: 30px;
+    }
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #10638d;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+}
