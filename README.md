@@ -1,4 +1,4 @@
-# NodeUploads
+# Find Github user By Username
  ### Version
 1.0.0
  ## Usage
@@ -14,25 +14,13 @@ $ npm start
 ```
  ## App Info
  ### Author
-Zeeshan Adeel
+Imran Bilal
  ### Version
  1.0.0
- ### License
- This project is licensed under the MIT License
-=======
-
-An example of how to upload images locally with Node.js and Multer.
-
-### Version
-1.0.0
-
-## Usage
 
 ### Installation
 
 Install the dependencies
-
-```sh
 $ npm install
 ```
 
@@ -40,14 +28,10 @@ $ npm install
 To serve in the browser
 
 ```sh
-$ npm start
+$ node app.js
 ```
 
 ## App Info
-
-### Author
-
-[Adeel Zeeshan](http://www.github.com/adeel-zeeshan)
 
 ### Version
 
