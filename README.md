@@ -10,7 +10,7 @@ $ npm install
  ### Serve
 To serve in the browser
  ```sh
-$ npm start
+$ npm app.js
 ```
  ## App Info
  ### Author
